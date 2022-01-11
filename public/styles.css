@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --neutral-dark: hsl(234, 12%, 34%);
+  --neutral-medium: hsl(229, 6%, 66%);
+  --neutral-light: hsl(0, 0%, 98%);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* Four card feature section */
+
+/* Weights: 200, 400, 600 */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--neutral-medium);
+  background: var(--neutral-light);
+  height: 100vh;
+  margin: 0;
+}
+
+/* Title */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 33.3vh;
+  text-align: center;
+}
+
+.title h1 {
+  color: var(--neutral-dark);
+  font-weight: 200;
+  margin: 1em;
+}
+
+.title h1 span {
+  font-weight: 600;
+}
+
+.title p {
+  font-size: 1.1em;
+  width: 600px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 100px;
+  align-items: center;
+}
+
+.single-card {
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
+  margin: 1em;
+  width: 400px;
+  height: 200px;
+}
+
+.card-1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.card-4 {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
