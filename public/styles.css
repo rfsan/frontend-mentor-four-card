@@ -89,7 +89,6 @@ body {
   /* margin: 1em; */
   padding: 2em;
   width: 350px;
-  max-width: 320px;
   height: 245px;
   box-shadow: 0 10px 20px 10px rgba(163, 165, 174, 0.3);
 }
@@ -143,5 +142,11 @@ body {
   .cards {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .single-card {
+    width: 320px;
   }
 }
