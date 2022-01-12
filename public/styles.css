@@ -58,7 +58,8 @@ body {
 .title h1 {
   color: var(--neutral-dark);
   font-weight: 200;
-  margin: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2.4rem;
 }
 
 .title h1 span {
@@ -73,13 +74,14 @@ body {
 
 /* Cards */
 .cards {
+  max-width: 1250px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 0 100px;
+  margin: 0 auto;
   align-items: center;
   justify-items: center;
-  row-gap: 35px;
+  gap: 35px;
 }
 
 .single-card {
@@ -88,7 +90,7 @@ body {
   border-radius: 0.5em;
   /* margin: 1em; */
   padding: 2em;
-  width: 350px;
+  width: 375px;
   height: 245px;
   box-shadow: 0 10px 20px 10px rgba(163, 165, 174, 0.3);
 }
@@ -143,9 +145,13 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .cards .single-card:last-child {
+    margin-bottom: 100px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .single-card {
     width: 320px;
   }
