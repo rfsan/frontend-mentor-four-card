@@ -81,6 +81,7 @@ body {
 
 .single-card {
   position: relative;
+  background: white;
   border: 1px solid #aaa;
   border-radius: 0.5em;
   /* margin: 1em; */
